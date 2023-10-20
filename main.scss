@@ -1,12 +1,18 @@
-@import 'constants';
-@import 'aligns';
-@import 'texts';
-@import 'spaces';
-@import 'fonts';
-@import 'loaders';
-@import 'reset';
-@import 'links';
-@import 'grids';
-@import 'stacks';
-@import 'footer';
-@import 'fx';
+@use 'colors';
+@use 'radius';
+@use 'spaces';
+@use 'shadows';
+@use 'inputs';
+@use 'spacer';
+@use 'buttons';
+@use 'fonts';
+@use 'alerts';
+@use 'loaders';
+
+body {
+    background-color: colors.$light;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: fonts.$font_default;
+}
+
+
