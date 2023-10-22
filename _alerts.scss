@@ -1,3 +1,8 @@
+@use 'shadows';
+@use 'spaces';
+@use 'colors';
+@use 'radius';
+
 .alert {
     display: grid; 
     box-shadow: shadows.$box-shadow;
@@ -13,7 +18,7 @@
         align-self: center;
     }
     button {
-        color: $dark;
+        color: colors.$secondary;
         background-color: transparent;
         border: none;
     }
@@ -21,20 +26,20 @@
 
 .alert-success {
     background-color: colors.$success;    
-    border-color: colors.$borderPrimary;
+    border-color: colors.$border_primary;
 }
 
 .alert-info {
     background-color: colors.$info;    
-    border-color: colors.$borderPrimary;
+    border-color: colors.$border_primary;
 }
 
 .alert-warning {
     background-color: colors.$warning;    
-    border-color: colors.$borderPrimary;
+    border-color: colors.$border_primary;
 }
 
 .alert-danger {
     background-color: colors.$danger;    
-    border-color: colors.$borderPrimary;
+    border-color: colors.$border_primary;
 }

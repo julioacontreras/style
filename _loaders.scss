@@ -1,10 +1,12 @@
+@use 'colors';
+
 .loader {
     display: inline-block;
     &:after {
         content: " ";
         display: block;
-        border: 6px solid colors.$light;
-        border-color: $light transparent colors.$light transparent;
+        border: 6px solid colors.$border_primary;
+        border-color: colors.$border_primary transparent colors.$border_primary transparent;
         animation: loader-animated 1.2s linear infinite;
       }
 }
